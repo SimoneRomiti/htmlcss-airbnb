@@ -32,15 +32,20 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.text{
+.box{
   width: 40%;
-  padding: 10px 0;
-  font-size: 55px;
-  text-align: center;
+  padding: 10px 50px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.text{
+  width: 100%;
+  font-size: 55px;
+  text-align: center;
+  transition: transform.3s;
   color: white;
 }
 
@@ -50,4 +55,8 @@
 
 .background:hover .text{
   background-color: rgba(0, 120, 255, 0.5);
+}
+
+.text:hover{
+  transform: scale(1.1);
 }
